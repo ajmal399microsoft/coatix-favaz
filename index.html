@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coatix Xpress Painting</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background: url('assets/paintexplode.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .services img, .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #0d1b2a;
+      color: white;
+      padding: 20px 0;
+    }
+    .logo {
+      height: 60px;
+    }
+    .social-icons a {
+      color: white;
+      margin-left: 10px;
+      font-size: 1.2rem;
+    }
+    .social-icons a:hover {
+      color: #f8c146;
+    }
+    .whatsapp-link {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      font-weight: bold;
+    }
+    .whatsapp-link i {
+      margin-right: 8px;
+    }
+    .whatsapp-link:hover {
+      background-color: #1ebc59;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo.png" alt="Coatix Logo" class="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="display-4">Bring Color to Your World</h1>
+    <p class="lead">Professional, fast, and affordable painting services by Coatix Xpress Painting</p>
+    <a href="https://wa.me/919562555200?text=I'm%20interested%20in%20your%20painting%20services" class="whatsapp-link" target="_blank">
+      <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Us</h2>
+    <p class="text-center">Coatix Xpress Painting is your trusted partner for all residential and commercial painting needs. We focus on delivering top-notch painting services with precision, speed, and professionalism.</p>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/interior-painting.png" alt="Interior Painting">
+          <div class="card-body">
+            <h5 class="card-title">Interior Painting</h5>
+            <p class="card-text">Freshen up your walls with our professional interior painting solutions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/exterior-painting.png" alt="Exterior Painting">
+          <div class="card-body">
+            <h5 class="card-title">Exterior Painting</h5>
+            <p class="card-text">Durable and beautiful finishes for your building’s exterior.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="assets/commercial.png" alt="Commercial Projects">
+          <div class="card-body">
+            <h5 class="card-title">Commercial Projects</h5>
+            <p class="card-text">We handle large-scale commercial painting with speed and excellence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Work</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" class="img-fluid rounded" alt="Gallery 1">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="https://images.unsplash.com/photo-1581579185169-c3d5b1cf1721" class="img-fluid rounded" alt="Gallery 2">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="https://images.unsplash.com/photo-1605283187183-fbc9201a2b3c" class="img-fluid rounded" alt="Gallery 3">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="https://images.unsplash.com/photo-1591362034241-3a0669a62e01" class="img-fluid rounded" alt="Gallery 4">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Phone:</h5>
+        <p>+91 95 6255 5200, +91 95 6255 5300</p>
+        <h5>Email:</h5>
+        <p>coatixpainting@gmail.com</p>
+        <h5>Location:</h5>
+        <p>Malappuram, Kerala</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <a href="https://wa.me/919562555200?text=I'm%20interested%20in%20your%20painting%20services" class="whatsapp-link" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 Coatix Xpress Painting. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
